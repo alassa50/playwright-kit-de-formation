@@ -35,13 +35,13 @@ de tests : ils valident des parcours utilisateurs complets là où les tests uni
 d'intégration ne peuvent pas aller.
 
 ```
-        ┌──────────┐
-        │   E2E    │  ← Playwright (cette formation)
-        ├──────────┤
+        ┌───────────┐
+        │   E2E     │  ← Playwright (cette formation)
+        ├───────────┤
         │Integration│
-        ├──────────┤
+        ├───────────┤
         │  Unitaire │
-        └──────────┘
+        └───────────┘
 ```
 
 **À retenir** : les tests E2E ne remplacent pas les tests unitaires ; ils les complètent
