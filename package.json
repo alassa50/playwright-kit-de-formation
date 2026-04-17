@@ -1,0 +1,40 @@
+{
+  "name": "playwright-kit-de-formation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kit de formation Playwright en TypeScript (débutant à avancé)",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "playwright test --project=chromium",
+    "test:all": "playwright test",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:visual": "playwright test --grep @visual",
+    "test:a11y": "playwright test --grep @a11y",
+    "bdd": "cucumber-js examples/bdd-cucumber/features --require-module ts-node/register --require examples/bdd-cucumber/steps/**/*.ts --format html:examples/bdd-cucumber/reports/cucumber-report.html"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

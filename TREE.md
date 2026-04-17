@@ -1,0 +1,29 @@
+# Arborescence du dépôt
+
+- `README.md` — Vue d'ensemble et démarrage rapide.
+- `TREE.md` — Arborescence et description des éléments.
+- `CONTRIBUTING.md` — Règles de contribution.
+- `TEACHING_GUIDE.md` — Guide formateur + évaluation apprenants.
+- `MAINTENANCE.md` — Guide flaky tests et dette technique.
+- `CHECKLIST_FUTURE_PROOF.md` — Plan de maintenance 12–24 mois.
+- `SECURITY.md` — Politique de secrets et sécurité opérationnelle.
+- `CODE_OF_CONDUCT.md` — Code de conduite.
+- `LICENSE` — Licence MIT.
+- `package.json` — Scripts, dépendances, outillage.
+- `tsconfig.json` — TypeScript strict.
+- `.eslintrc` — Configuration ESLint.
+- `.prettierrc` — Configuration Prettier.
+- `playwright.config.ts` — Configuration Playwright Test.
+- `.gitignore` — Exclusions Git.
+- `.github/prompts/` — Prompts Copilot versionnés.
+- `.github/workflows/` — CI, publication de rapport, maintenance.
+- `.github/dependabot.yml` — Automatisation des dépendances.
+- `devcontainer/` — Environnement reproductible VS Code.
+- `course/` — 12 chapitres pédagogiques.
+- `exercises/` — 6 exercices (énoncé + tests + starter).
+- `solutions/` — 6 solutions commentées.
+- `examples/pom/` — Exemple Page Object Model e-commerce.
+- `examples/visual-testing/` — Exemple snapshots visuels.
+- `examples/bdd-cucumber/` — Exemple BDD Cucumber + rapport.
+- `templates/` — Modèles pour créer de nouveaux exercices.
+- `scripts/` — Script utilitaire minimal (ex. exécution ciblée).
