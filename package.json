@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "playwright-kit-de-formation",
   "version": "1.0.0",
   "private": true,
