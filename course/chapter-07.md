@@ -121,11 +121,11 @@ expect: {
 
 Quand un snapshot échoue en CI, trois fichiers sont produits dans `test-results/` :
 
-| Fichier | Description |
-|---|---|
-| `expected.png` | L'image de référence validée |
-| `actual.png` | Ce que le test a capturé |
-| `diff.png` | La différence pixel par pixel (zones rouges = différences) |
+| Fichier        | Description                                                |
+| -------------- | ---------------------------------------------------------- |
+| `expected.png` | L'image de référence validée                               |
+| `actual.png`   | Ce que le test a capturé                                   |
+| `diff.png`     | La différence pixel par pixel (zones rouges = différences) |
 
 **Interpréter le diff :**
 

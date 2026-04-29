@@ -23,14 +23,14 @@ suite de tests.
 
 **Les causes les plus fréquentes :**
 
-| Cause | Description |
-|---|---|
-| **Race condition** | Le test agit sur un élément avant qu'il soit prêt |
-| **Dépendance réseau** | L'API externe est lente ou indisponible |
-| **Données partagées** | Un test précédent laisse des données qui interfèrent |
-| **Animations** | Un élément se déplace ou change d'état pendant l'interaction |
-| **Ordre d'exécution** | Les tests fonctionnent seuls mais échouent en parallèle |
-| **Environnement** | Différences de performance entre local et CI |
+| Cause                 | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| **Race condition**    | Le test agit sur un élément avant qu'il soit prêt            |
+| **Dépendance réseau** | L'API externe est lente ou indisponible                      |
+| **Données partagées** | Un test précédent laisse des données qui interfèrent         |
+| **Animations**        | Un élément se déplace ou change d'état pendant l'interaction |
+| **Ordre d'exécution** | Les tests fonctionnent seuls mais échouent en parallèle      |
+| **Environnement**     | Différences de performance entre local et CI                 |
 
 **Identifier un test flaky :**
 
@@ -49,10 +49,12 @@ Si le test échoue aléatoirement sur plusieurs exécutions, il est flaky.
 
 ```typescript
 // Polling : vérifie la condition toutes les 100ms pendant 5s par défaut
-await expect.poll(async () => {
-  const text = await page.getByRole('status').textContent();
-  return text;
-}).toBe('Terminé');
+await expect
+  .poll(async () => {
+    const text = await page.getByRole('status').textContent();
+    return text;
+  })
+  .toBe('Terminé');
 ```
 
 Utile quand le résultat vient d'un appel asynchrone (timer, WebSocket, job en arrière-plan).

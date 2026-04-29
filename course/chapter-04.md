@@ -39,6 +39,7 @@ npx playwright show-trace test-results/<nom-du-test>/trace.zip
 ```
 
 Le Trace Viewer s'ouvre dans le navigateur. Il affiche :
+
 - une **timeline** cliquable avec chaque action,
 - le **snapshot du DOM** à chaque étape,
 - les **appels réseau** et leurs réponses,
@@ -85,11 +86,11 @@ await page.locator('article').screenshot({ path: 'debug/carte.png' });
 
 **Différence trace vs screenshot :**
 
-| Outil | Contient | Usage principal |
-|---|---|---|
-| Screenshot | Image fixe de la page à un instant | Vérifier l'état visuel |
-| Vidéo | Enregistrement de toute l'exécution | Rejouer le test pas à pas |
-| Trace | Tout : DOM, réseau, logs, screenshots | Diagnostic complet d'un échec |
+| Outil      | Contient                              | Usage principal               |
+| ---------- | ------------------------------------- | ----------------------------- |
+| Screenshot | Image fixe de la page à un instant    | Vérifier l'état visuel        |
+| Vidéo      | Enregistrement de toute l'exécution   | Rejouer le test pas à pas     |
+| Trace      | Tout : DOM, réseau, logs, screenshots | Diagnostic complet d'un échec |
 
 ---
 
@@ -122,13 +123,13 @@ Le message indique : l'assertion `toHaveText('Terminé')` a expiré parce que le
 
 **Étape 3 — Corriger selon la cause**
 
-| Cause | Correction recommandée |
-|---|---|
-| Élément pas encore visible | `await expect(locator).toBeVisible()` (auto-wait) |
-| Texte pas encore mis à jour | `await expect(locator).toHaveText('...')` (auto-wait) |
-| API lente | `page.route` pour mocker ou augmenter le timeout |
-| Animation bloque l'interaction | `await locator.waitFor({ state: 'stable' })` |
-| Timing race condition | Restructurer pour attendre un événement réseau précis |
+| Cause                          | Correction recommandée                                |
+| ------------------------------ | ----------------------------------------------------- |
+| Élément pas encore visible     | `await expect(locator).toBeVisible()` (auto-wait)     |
+| Texte pas encore mis à jour    | `await expect(locator).toHaveText('...')` (auto-wait) |
+| API lente                      | `page.route` pour mocker ou augmenter le timeout      |
+| Animation bloque l'interaction | `await locator.waitFor({ state: 'stable' })`          |
+| Timing race condition          | Restructurer pour attendre un événement réseau précis |
 
 **Ce qu'il ne faut pas faire :**
 

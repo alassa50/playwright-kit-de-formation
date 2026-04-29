@@ -61,8 +61,7 @@ const test = base.extend<Fixtures>({
 
 // Utiliser la fixture dans un test
 test('accès au tableau de bord', async ({ loggedInPage }) => {
-  await expect(loggedInPage.getByRole('heading', { name: 'Tableau de bord' }))
-    .toBeVisible();
+  await expect(loggedInPage.getByRole('heading', { name: 'Tableau de bord' })).toBeVisible();
 });
 ```
 

@@ -23,12 +23,12 @@ sont ceux qui peuvent être vérifiés par un outil comme axe-core.
 
 **Les 4 grands principes (POUR) :**
 
-| Principe | Signification | Exemple de règle testable |
-|---|---|---|
-| **P**erceptible | L'information est accessible aux sens | Contraste texte/fond suffisant, alternative texte |
-| **O**pérable | L'interface est utilisable sans souris | Navigation au clavier, focus visible |
-| **U**nderstandable | Le contenu est compréhensible | Labels de formulaire présents et clairs |
-| **R**obuste | Compatible avec les technologies d'assistance | Structure HTML valide, rôles ARIA corrects |
+| Principe           | Signification                                 | Exemple de règle testable                         |
+| ------------------ | --------------------------------------------- | ------------------------------------------------- |
+| **P**erceptible    | L'information est accessible aux sens         | Contraste texte/fond suffisant, alternative texte |
+| **O**pérable       | L'interface est utilisable sans souris        | Navigation au clavier, focus visible              |
+| **U**nderstandable | Le contenu est compréhensible                 | Labels de formulaire présents et clairs           |
+| **R**obuste        | Compatible avec les technologies d'assistance | Structure HTML valide, rôles ARIA corrects        |
 
 **Ce qu'axe-core peut détecter automatiquement :**
 
@@ -60,7 +60,7 @@ import { expect, test } from '@playwright/test';
 import { accessibleHtml } from '../starter/a11y-page';
 
 test.describe('Exercice avancé 01 @a11y', () => {
-  test('valide l\'absence de violation critique', async ({ page }) => {
+  test("valide l'absence de violation critique", async ({ page }) => {
     await page.setContent(accessibleHtml);
 
     // Analyser toute la page
@@ -93,19 +93,19 @@ console.log(results.incomplete);
 
 **Niveaux d'impact :**
 
-| Impact | Signification |
-|---|---|
+| Impact     | Signification                                       |
+| ---------- | --------------------------------------------------- |
 | `critical` | Bloque complètement l'accès à certains utilisateurs |
-| `serious` | Crée de grandes difficultés |
-| `moderate` | Gêne significative |
-| `minor` | Inconfort limité |
+| `serious`  | Crée de grandes difficultés                         |
+| `moderate` | Gêne significative                                  |
+| `minor`    | Inconfort limité                                    |
 
 **Analyser une zone spécifique :**
 
 ```typescript
 const results = await new AxeBuilder({ page })
   .include('#formulaire-contact') // analyser seulement ce sélecteur
-  .exclude('#bandeau-cookies')   // ignorer ce sélecteur
+  .exclude('#bandeau-cookies') // ignorer ce sélecteur
   .analyze();
 ```
 

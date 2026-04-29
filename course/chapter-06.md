@@ -92,9 +92,9 @@ test('POM: ajout au panier', async ({ page }) => {
   const catalog = new CatalogPage(page);
   const cart = new CartPage(page);
 
-  await catalog.openWithContent(html);    // ouvrir la page
-  await catalog.addFirstItemToCart();    // action métier
-  await cart.expectCount(1);             // assertion via cart
+  await catalog.openWithContent(html); // ouvrir la page
+  await catalog.addFirstItemToCart(); // action métier
+  await cart.expectCount(1); // assertion via cart
 });
 ```
 

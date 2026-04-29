@@ -70,12 +70,12 @@ test('valide le parcours de connexion', async ({ page }) => {
 
 **Les blocs essentiels :**
 
-| Élément | Rôle |
-|---|---|
-| `test('nom', async ({ page }) => {})` | Définit un scénario avec son nom et sa fonction asynchrone |
-| `page` | Objet qui représente l'onglet navigateur ; toutes les interactions passent par lui |
-| `await` | Nécessaire devant toute action Playwright (elles sont toutes asynchrones) |
-| `expect(locator)` | Crée une assertion ; Playwright attend automatiquement que la condition soit vraie |
+| Élément                               | Rôle                                                                               |
+| ------------------------------------- | ---------------------------------------------------------------------------------- |
+| `test('nom', async ({ page }) => {})` | Définit un scénario avec son nom et sa fonction asynchrone                         |
+| `page`                                | Objet qui représente l'onglet navigateur ; toutes les interactions passent par lui |
+| `await`                               | Nécessaire devant toute action Playwright (elles sont toutes asynchrones)          |
+| `expect(locator)`                     | Crée une assertion ; Playwright attend automatiquement que la condition soit vraie |
 
 **Structurer plusieurs tests avec `test.describe` :**
 
@@ -129,6 +129,7 @@ npx playwright show-report
 ```
 
 Le rapport HTML affiche :
+
 - la liste de tous les tests avec leur statut (✓ réussi / ✗ échoué / △ ignoré),
 - pour chaque test échoué : un screenshot, une vidéo et une trace cliquable,
 - le temps d'exécution par test.

@@ -25,13 +25,13 @@ que sur des détails d'implémentation comme les classes CSS.
 
 ```typescript
 // Cible un bouton dont le texte accessible est "Se connecter"
-page.getByRole('button', { name: 'Se connecter' })
+page.getByRole('button', { name: 'Se connecter' });
 
 // Cible un lien
-page.getByRole('link', { name: 'Accueil' })
+page.getByRole('link', { name: 'Accueil' });
 
 // Cible une case à cocher
-page.getByRole('checkbox', { name: 'Accepter les CGU' })
+page.getByRole('checkbox', { name: 'Accepter les CGU' });
 ```
 
 Les rôles correspondent aux balises HTML sémantiques :
@@ -64,10 +64,10 @@ l'attribut dans le code source de l'application.
 
 ```typescript
 // Cible un élément dont le texte visible est exactement "Bienvenue"
-page.getByText('Bienvenue')
+page.getByText('Bienvenue');
 
 // Cible un input via son placeholder
-page.getByPlaceholder('Entrez votre email')
+page.getByPlaceholder('Entrez votre email');
 ```
 
 ---
@@ -82,14 +82,14 @@ classe, id, position dans le DOM. Le problème : ces détails changent souvent l
 
 ```typescript
 // ⚠️  Si la classe CSS change ou si l'ordre des boutons change, ce test casse.
-page.locator('.btn-primary:nth-child(2)')
+page.locator('.btn-primary:nth-child(2)');
 ```
 
 **Même intention, version robuste :**
 
 ```typescript
 // ✅ Recherche par rôle + texte : stable même si les classes changent.
-page.getByRole('button', { name: 'Ajouter au panier' })
+page.getByRole('button', { name: 'Ajouter au panier' });
 ```
 
 **Règle pratique :**
