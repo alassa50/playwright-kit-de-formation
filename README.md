@@ -39,6 +39,8 @@ Formation complète et pratique Playwright (débutant → avancé), prête pour 
 4. `npm test`
 5. `npm run test:visual`
 
+> **Note Husky** : Si tu veux activer les hooks git (lint-staged), lance manuellement `npx husky install` après l'installation des dépendances. Le script `prepare` a été retiré car la commande `husky install` est désormais dépréciée dans les scripts npm.
+
 ## Scripts utiles
 
 - `npm test` : suite Playwright (Chromium)
