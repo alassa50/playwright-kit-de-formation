@@ -28,6 +28,24 @@ dans les logs.
 3. Cliquer sur `New repository secret`.
 4. Nommer le secret (ex: `TEST_API_KEY`) et entrer sa valeur.
 
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Stocker un secret dans GitHub.
+- Utiliser un secret dans un workflow CI.
+- Appliquer un test de sécurité basique.
+
+**Quiz rapide**
+
+1. Pourquoi ne jamais commiter un secret ?
+2. Comment référencer un secret dans GitHub Actions ?
+3. Que faire si un secret a fuité ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+
 **Utiliser un secret dans un workflow :**
 
 ```yaml

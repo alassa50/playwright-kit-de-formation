@@ -29,6 +29,24 @@ détecter une dégradation progressive.
 | **Nombre de tests flaky**     | Tests qui échouent < 100% du temps      | 0 en production |
 | **Temps moyen de résolution** | Durée entre premier échec et correction | < 2 jours       |
 
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Après avoir terminé la formation, vérifie que tu sais :
+
+- Mettre en place une stratégie de maintenance durable.
+- Mesurer la qualité d’une suite de tests dans le temps.
+- Suivre les KPIs essentiels pour la fiabilité.
+
+**Quiz rapide**
+
+1. Quel KPI surveiller pour détecter une dégradation ?
+2. Comment réduire le nombre de tests flaky ?
+3. Que faire si le taux de succès CI chute ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+
 **KPIs complémentaires :**
 
 - **Durée totale de la pipeline** : surveiller la tendance, pas la valeur absolue.

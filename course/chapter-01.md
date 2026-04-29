@@ -44,8 +44,23 @@ d'intégration ne peuvent pas aller.
         └───────────┘
 ```
 
-**À retenir** : les tests E2E ne remplacent pas les tests unitaires ; ils les complètent
-en validant que le tout fonctionne ensemble du point de vue de l'utilisateur.
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Expliquer le rôle de Playwright dans une stratégie qualité.
+- Citer au moins 2 avantages de Playwright.
+- Exécuter un test Playwright simple en local.
+
+**Quiz rapide**
+
+1. Quel est l’avantage principal de l’auto-wait intégré ?
+2. Pourquoi privilégier les sélecteurs accessibles ?
+3. Comment Playwright garantit-il l’isolation des tests ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
 
 ---
 

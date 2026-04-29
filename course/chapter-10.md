@@ -28,6 +28,24 @@ on:
 
 jobs:
   lint:
+
+    ---
+
+    ## 🟢 Checkpoint — Auto-évaluation
+
+    Avant de passer au chapitre suivant, vérifie que tu sais :
+
+    - Comprendre la matrice OS + navigateurs en CI.
+    - Exploiter les artefacts générés par la CI.
+    - Adapter le workflow GitHub Actions pour Playwright.
+
+    **Quiz rapide**
+
+    1. Où trouver les artefacts Playwright dans GitHub Actions ?
+    2. Comment ajouter un navigateur à la matrice de test ?
+    3. Que faire si un test échoue uniquement en CI ?
+
+    > Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

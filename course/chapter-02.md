@@ -21,6 +21,24 @@ Playwright propose plusieurs façons de cibler un élément dans la page. Les pl
 sont celles orientées **accessibilité** : elles s'appuient sur la sémantique HTML plutôt
 que sur des détails d'implémentation comme les classes CSS.
 
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Utiliser les sélecteurs accessibles (`getByRole`, `getByLabel`, `getByTestId`).
+- Expliquer pourquoi ils sont plus robustes que les sélecteurs CSS classiques.
+- Écrire une assertion explicite sur la visibilité d’un élément.
+
+**Quiz rapide**
+
+1. Quelle différence entre `getByRole` et un sélecteur CSS ?
+2. Pourquoi éviter les attentes fixes (`waitForTimeout`) ?
+3. Comment tester qu’un élément est masqué sans timeout ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+
 **`getByRole` — cible un élément par son rôle ARIA**
 
 ```typescript

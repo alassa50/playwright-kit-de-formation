@@ -28,6 +28,24 @@ npm run test:visual
 
 # Mettre à jour les snapshots après un changement intentionnel
 npx playwright test --update-snapshots
+
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Mettre en place des snapshots visuels avec Playwright.
+- Interpréter un diff d’image dans un test visuel.
+- Mettre à jour les snapshots après un changement légitime.
+
+**Quiz rapide**
+
+1. Quand faut-il mettre à jour les snapshots ?
+2. Que faire si un diff visuel n’est pas attendu ?
+3. Comment ajuster la sensibilité d’un test visuel ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
 ```
 
 **Syntaxe de base :**

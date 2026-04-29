@@ -21,6 +21,24 @@ La **trace** est l'enregistrement complet d'un test : chaque action, chaque appe
 chaque état du DOM, chaque screenshot intermédiaire. C'est l'outil le plus puissant pour
 diagnostiquer un échec, notamment en CI.
 
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Activer et exploiter les traces Playwright.
+- Utiliser les screenshots et rapports HTML pour diagnostiquer un échec.
+- Lire et interpréter une trace en cas de test rouge.
+
+**Quiz rapide**
+
+1. Quand activer les traces systématiquement ?
+2. Où trouver les screenshots générés par Playwright ?
+3. Que faire si la trace ne montre pas d’erreur évidente ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+
 **Activer les traces dans `playwright.config.ts` :**
 
 ```typescript

@@ -1,3 +1,15 @@
+---
+
+## Formation asynchrone et checkpoints
+
+Cette formation est conçue pour être suivie à ton rythme, en autonomie complète et 100% localement.
+
+- **Checkpoints** : À la fin de chaque chapitre et exercice, tu trouveras une section "Checkpoint — Auto-évaluation" avec des questions ou une checklist pour valider tes acquis avant de poursuivre.
+- **Quiz/Checklist** : Prends le temps d’y répondre honnêtement, c’est un outil d’auto-évaluation, pas de contrôle.
+- **Rythme libre** : Avance à ton rythme, reviens sur les chapitres si besoin, expérimente dans le code.
+
+> Objectif : garantir que tu maîtrises chaque étape avant d’aller plus loin.
+
 # Playwright Kit de Formation (TypeScript)
 
 Formation complète et pratique Playwright (débutant → avancé), prête pour le présentiel et l'asynchrone.

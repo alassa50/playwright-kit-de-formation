@@ -23,12 +23,30 @@ sont ceux qui peuvent être vérifiés par un outil comme axe-core.
 
 **Les 4 grands principes (POUR) :**
 
-| Principe           | Signification                                 | Exemple de règle testable                         |
-| ------------------ | --------------------------------------------- | ------------------------------------------------- |
-| **P**erceptible    | L'information est accessible aux sens         | Contraste texte/fond suffisant, alternative texte |
-| **O**pérable       | L'interface est utilisable sans souris        | Navigation au clavier, focus visible              |
-| **U**nderstandable | Le contenu est compréhensible                 | Labels de formulaire présents et clairs           |
-| **R**obuste        | Compatible avec les technologies d'assistance | Structure HTML valide, rôles ARIA corrects        |
+| Principe        | Signification                          | Exemple de règle testable                         |
+| --------------- | -------------------------------------- | ------------------------------------------------- |
+| **P**erceptible | L'information est accessible aux sens  | Contraste texte/fond suffisant, alternative texte |
+| **O**pérable    | L'interface est utilisable sans souris | Navigation au clavier, focus visible              |
+
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Détecter des violations a11y avec axe-core.
+- Corriger les problèmes d’accessibilité courants.
+- Expliquer les 4 principes WCAG.
+
+**Quiz rapide**
+
+1. Quelle règle WCAG est la plus souvent violée ?
+2. Comment intégrer axe-core dans un test Playwright ?
+3. Que faire si un test a11y échoue ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+> | **U**nderstandable | Le contenu est compréhensible | Labels de formulaire présents et clairs |
+> | **R**obuste | Compatible avec les technologies d'assistance | Structure HTML valide, rôles ARIA corrects |
 
 **Ce qu'axe-core peut détecter automatiquement :**
 

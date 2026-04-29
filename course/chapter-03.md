@@ -28,6 +28,23 @@ personnalisées pour injecter des données ou des objets partagés.
 // context : contexte navigateur (cookies, storage)
 // browser : instance navigateur complète
 test('exemple', async ({ page, context }) => {
+  ---
+
+  ## 🟢 Checkpoint — Auto-évaluation
+
+  Avant de passer au chapitre suivant, vérifie que tu sais :
+
+  - Expliquer le rôle d’une fixture dans Playwright.
+  - Organiser des données de test pour la répétabilité.
+  - Écrire un test idempotent (répétable sans effet de bord).
+
+  **Quiz rapide**
+
+  1. Quelle différence entre `page`, `context` et `browser` ?
+  2. Pourquoi isoler les données de test ?
+  3. Comment garantir qu’un test reste idempotent ?
+
+  > Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
   // ...
 });
 ```

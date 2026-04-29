@@ -28,6 +28,24 @@ await page.getByRole('button', { name: 'Ajouter au panier' }).first().click();
 await expect(page.getByTestId('cart-count')).toHaveText('1');
 
 // Test B — même code dupliqué
+
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Expliquer le principe du Page Object Model.
+- Refactoriser un test pour réduire la duplication.
+- Créer une classe POM pour une page donnée.
+
+**Quiz rapide**
+
+1. Quels sont les avantages du POM ?
+2. Comment factoriser les actions répétées dans un test ?
+3. Que faire si la page évolue ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
 await page.getByRole('button', { name: 'Ajouter au panier' }).first().click();
 await expect(page.getByTestId('cart-count')).toHaveText('1');
 ```

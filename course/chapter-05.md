@@ -23,14 +23,32 @@ suite de tests.
 
 **Les causes les plus fréquentes :**
 
-| Cause                 | Description                                                  |
-| --------------------- | ------------------------------------------------------------ |
-| **Race condition**    | Le test agit sur un élément avant qu'il soit prêt            |
-| **Dépendance réseau** | L'API externe est lente ou indisponible                      |
-| **Données partagées** | Un test précédent laisse des données qui interfèrent         |
-| **Animations**        | Un élément se déplace ou change d'état pendant l'interaction |
-| **Ordre d'exécution** | Les tests fonctionnent seuls mais échouent en parallèle      |
-| **Environnement**     | Différences de performance entre local et CI                 |
+| Cause                 | Description                                          |
+| --------------------- | ---------------------------------------------------- |
+| **Race condition**    | Le test agit sur un élément avant qu'il soit prêt    |
+| **Dépendance réseau** | L'API externe est lente ou indisponible              |
+| **Données partagées** | Un test précédent laisse des données qui interfèrent |
+
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Identifier les causes de flakiness dans un test.
+- Appliquer des retries ciblés et des attentes intelligentes.
+- Rendre un test plus stable.
+
+**Quiz rapide**
+
+1. Quelle est la cause la plus fréquente de flakiness ?
+2. Comment éviter les dépendances réseau dans un test ?
+3. Quand utiliser les retries Playwright ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
+> | **Animations** | Un élément se déplace ou change d'état pendant l'interaction |
+> | **Ordre d'exécution** | Les tests fonctionnent seuls mais échouent en parallèle |
+> | **Environnement** | Différences de performance entre local et CI |
 
 **Identifier un test flaky :**
 

@@ -28,6 +28,24 @@ actions).
 Feature: Panier e-commerce
   Scenario: Ajouter un produit met à jour le total
     Given un panier vide
+
+  ---
+
+  ## 🟢 Checkpoint — Auto-évaluation
+
+  Avant de passer au chapitre suivant, vérifie que tu sais :
+
+  - Écrire un scénario Gherkin simple.
+  - Mapper Given/When/Then sur des actions Playwright.
+  - Organiser les fichiers feature et steps.
+
+  **Quiz rapide**
+
+  1. Quelle est la structure d’un fichier feature ?
+  2. Comment relier un step à une action Playwright ?
+  3. Que faire si un step n’est pas reconnu ?
+
+  > Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
     When j'ajoute un produit à 25 euros
     Then le total du panier doit être 25 euros
 ```
