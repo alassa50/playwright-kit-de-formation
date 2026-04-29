@@ -51,10 +51,11 @@ Formation complète et pratique Playwright (débutant → avancé), prête pour 
 - `npm run format` : formatage Prettier
 - `npm run bdd` : exemple Cucumber
 
-## Plan de formation (12 chapitres)
+## Plan de formation (13 chapitres)
 
-Voir `course/chapter-01.md` à `course/chapter-12.md`.
+Voir `course/chapter-00.md` à `course/chapter-12.md`.
 
+0. Bases JavaScript/TypeScript _(prérequis)_
 1. Introduction Playwright Test
 2. Sélecteurs robustes et assertions
 3. Fixtures et idempotence
@@ -70,7 +71,7 @@ Voir `course/chapter-01.md` à `course/chapter-12.md`.
 
 ## Exercices
 
-- Débutant : `exercises/beginner-01`, `exercises/beginner-02`
+- Débutant : `exercises/beginner-00`, `exercises/beginner-01`, `exercises/beginner-02`
 - Intermédiaire : `exercises/intermediate-01`, `exercises/intermediate-02`
 - Avancé : `exercises/advanced-01`, `exercises/advanced-02`
 
