@@ -321,3 +321,24 @@ export const cartHtml = `<div>…</div>`;
 ## Exercices associés
 
 - exercises/beginner-00
+  - exercises/beginner-00
+
+---
+
+## 🟢 Checkpoint — Auto-évaluation
+
+Avant de passer au chapitre suivant, vérifie que tu sais :
+
+- Déclarer et typer des variables en TypeScript.
+- Écrire et utiliser une fonction asynchrone avec `async/await`.
+- Utiliser une interface pour typer des données de test.
+- Importer et exporter des fonctions ou constantes.
+
+**Quiz rapide**
+
+1. Quelle différence entre `let` et `const` ?
+2. Pourquoi faut-il toujours utiliser `await` avec Playwright ?
+3. Comment définir le type d’un tableau d’objets ?
+4. Quelle syntaxe pour importer une fonction exportée ?
+
+> Si tu bloques sur une question, relis la section correspondante ou expérimente dans le starter kit.
