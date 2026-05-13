@@ -12,6 +12,7 @@
     "test:headed": "playwright test --project=chromium --headed",
     "test:visual": "playwright test --grep @visual",
     "test:a11y": "playwright test --grep @a11y",
+    "test:api": "playwright test exercises/advanced-04 solutions/advanced-04 --project=chromium",
     "bdd": "cucumber-js examples/bdd-cucumber/features --require-module ts-node/register --require examples/bdd-cucumber/steps/**/*.ts --format html:examples/bdd-cucumber/reports/cucumber-report.html",
     "coverage": "nyc npm run test:all"
   },

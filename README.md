@@ -47,13 +47,14 @@ Formation complète et pratique Playwright (débutant → avancé), prête pour 
 - `npm run test:headed` : exécution locale avec UI
 - `npm run test:visual` : snapshots visuels
 - `npm run test:all` : Chromium + Firefox + WebKit
+- `npm run test:api` : tests d'API natifs (advanced-04 + solutions)
 - `npm run lint` : lint TypeScript
 - `npm run format` : formatage Prettier
 - `npm run bdd` : exemple Cucumber
 
-## Plan de formation (13 chapitres)
+## Plan de formation (16 chapitres)
 
-Voir `course/chapter-00.md` à `course/chapter-12.md`.
+Voir `course/chapter-00.md` à `course/chapter-15.md`.
 
 0. Bases JavaScript/TypeScript _(prérequis)_
 1. Introduction Playwright Test
@@ -68,18 +69,23 @@ Voir `course/chapter-00.md` à `course/chapter-12.md`.
 10. CI/CD multi-plateforme
 11. Sécurité et secrets
 12. Industrialisation et dette technique
+13. Testing assisté par l'IA (2026)
+14. Test d'API natif avec Playwright
+15. Tester les systèmes IA (LLMs, chatbots)
 
 ## Exercices
 
 - Débutant : `exercises/beginner-00`, `exercises/beginner-01`, `exercises/beginner-02`
 - Intermédiaire : `exercises/intermediate-01`, `exercises/intermediate-02`
-- Avancé : `exercises/advanced-01`, `exercises/advanced-02`
+- Avancé : `exercises/advanced-01`, `exercises/advanced-02`, `exercises/advanced-03`, `exercises/advanced-04`
 
 ## IA (Copilot / ChatGPT)
 
 Consulter:
 
-- `.github/prompts/`
+- `.github/prompts/` — 5 prompts versionnés (génération, refactoring, revue qualité, test IA, création d'exercice)
+- `course/chapter-13.md` — Workflow IA intégré au cycle de test
+- `course/chapter-15.md` — Tester les LLMs et chatbots
 - `TEACHING_GUIDE.md` (workflow IA + revue humaine)
 - `MAINTENANCE.md` (flaky tests et dette technique)
 

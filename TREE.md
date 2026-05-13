@@ -15,13 +15,13 @@
 - `.prettierrc` — Configuration Prettier.
 - `playwright.config.ts` — Configuration Playwright Test.
 - `.gitignore` — Exclusions Git.
-- `.github/prompts/` — Prompts Copilot versionnés.
+- `.github/prompts/` — 5 prompts Copilot versionnés (`generate-test`, `refactor-to-pom`, `review-test-quality`, `test-ai-system`, `create-exercise`).
 - `.github/workflows/` — CI, publication de rapport, maintenance.
 - `.github/dependabot.yml` — Automatisation des dépendances.
 - `devcontainer/` — Environnement reproductible VS Code.
-- `course/` — 12 chapitres pédagogiques.
-- `exercises/` — 6 exercices (énoncé + tests + starter).
-- `solutions/` — 6 solutions commentées.
+- `course/` — 16 chapitres pédagogiques (chapitres 0–15).
+- `exercises/` — 8 exercices (énoncé + tests + starter).
+- `solutions/` — 8 solutions commentées.
 - `examples/pom/` — Exemple Page Object Model e-commerce.
 - `examples/visual-testing/` — Exemple snapshots visuels.
 - `examples/bdd-cucumber/` — Exemple BDD Cucumber + rapport.
