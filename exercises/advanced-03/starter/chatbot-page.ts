@@ -24,7 +24,7 @@ export const chatbotHtml = `
         status.removeAttribute('hidden');
 
         try {
-          const res = await fetch('/api/ai/chat', {
+          const res = await fetch('https://example.test/api/ai/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message }),
