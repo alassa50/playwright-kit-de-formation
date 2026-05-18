@@ -5,7 +5,7 @@
   "private": true,
   "description": "Kit de formation Playwright en TypeScript (débutant à avancé)",
   "scripts": {
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "format": "prettier --write .",
     "test": "playwright test --project=chromium",
     "test:all": "playwright test",

@@ -4,7 +4,15 @@ import prettierConfig from 'eslint-config-prettier';
 
 export default [
   {
-    ignores: ['node_modules/', 'dist/', 'build/', '.playwright/', 'examples/bdd-cucumber/reports/'],
+    ignores: [
+      'node_modules/',
+      'dist/',
+      'build/',
+      '.playwright/',
+      'examples/bdd-cucumber/reports/',
+      'playwright-report/',
+      'test-results/',
+    ],
   },
   {
     files: ['**/*.ts', '**/*.js'],
