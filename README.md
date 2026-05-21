@@ -54,7 +54,7 @@ Formation complète et pratique Playwright (débutant → avancé), prête pour 
 
 ## Plan de formation (17 chapitres)
 
-Voir `course/chapter-00.md` à `course/chapter-16.md`.
+Voir `course/chapter-00.md` à `course/chapter-17.md`.
 
 0. Bases JavaScript/TypeScript _(prérequis)_
 1. Introduction Playwright Test
@@ -73,12 +73,13 @@ Voir `course/chapter-00.md` à `course/chapter-16.md`.
 14. Test d'API natif avec Playwright
 15. Tester les systèmes IA (LLMs, chatbots)
 16. MCP & Agents IA pour l'automatisation QA
+17. Playwright Agents natifs : Planner, Generator, Healer
 
 ## Exercices
 
 - Débutant : `exercises/beginner-00`, `exercises/beginner-01`, `exercises/beginner-02`
 - Intermédiaire : `exercises/intermediate-01`, `exercises/intermediate-02`
-- Avancé : `exercises/advanced-01`, `exercises/advanced-02`, `exercises/advanced-03`, `exercises/advanced-04`, `exercises/advanced-05`
+- Avancé : `exercises/advanced-01`, `exercises/advanced-02`, `exercises/advanced-03`, `exercises/advanced-04`, `exercises/advanced-05`, `exercises/advanced-06`
 
 ## IA (Copilot / ChatGPT / Agents MCP)
 
@@ -88,6 +89,7 @@ Consulter:
 - `course/chapter-13.md` — Workflow IA intégré au cycle de test
 - `course/chapter-15.md` — Tester les LLMs et chatbots
 - `course/chapter-16.md` — MCP & agents IA pour l'automatisation QA (pipeline autonome)
+- `course/chapter-17.md` — Playwright Agents natifs : Planner, Generator, Healer (v1.56)
 - `examples/mcp-agent/` — Architecture de référence : orchestrateur, AGENTS.md, config MCP
 - `TEACHING_GUIDE.md` (workflow IA + revue humaine)
 - `MAINTENANCE.md` (flaky tests et dette technique)
