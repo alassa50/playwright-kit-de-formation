@@ -19,11 +19,12 @@
 - `.github/workflows/` — CI, publication de rapport, maintenance.
 - `.github/dependabot.yml` — Automatisation des dépendances.
 - `devcontainer/` — Environnement reproductible VS Code.
-- `course/` — 16 chapitres pédagogiques (chapitres 0–15).
-- `exercises/` — 8 exercices (énoncé + tests + starter).
-- `solutions/` — 8 solutions commentées.
+- `course/` — 17 chapitres pédagogiques (chapitres 0–16).
+- `exercises/` — 9 exercices (énoncé + tests + starter).
+- `solutions/` — 9 solutions commentées.
 - `examples/pom/` — Exemple Page Object Model e-commerce.
 - `examples/visual-testing/` — Exemple snapshots visuels.
 - `examples/bdd-cucumber/` — Exemple BDD Cucumber + rapport.
+- `examples/mcp-agent/` — Architecture de référence : pipeline MCP + agent QA autonome.
 - `templates/` — Modèles pour créer de nouveaux exercices.
 - `scripts/` — Script utilitaire minimal (ex. exécution ciblée).

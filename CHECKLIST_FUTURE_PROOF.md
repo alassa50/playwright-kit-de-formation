@@ -10,6 +10,7 @@
 - [x] **Portabilité**: devcontainer + scripts locaux.
 - [x] **Résilience**: exemples anti-flaky (fixtures, retries ciblés, selectors stables).
 - [x] **Dette technique**: section dédiée dans la gouvernance de cours.
+- [x] **MCP & Agents IA**: chapitre 16 + exercice advanced-05 + exemple `mcp-agent/` couvrant le pipeline ticket → PR autonome.
 
 ## Actions recommandées
 

@@ -17,11 +17,19 @@
 - KPI: temps moyen de résolution.
 - KPI: nombre de tests flakys observés.
 
-## Workflow IA (Copilot/ChatGPT)
+## Workflow IA (Copilot/ChatGPT/Agents MCP)
 
 1. Générer un brouillon avec un prompt versionné.
 2. Vérifier selectors, robustesse, sécurité.
 3. Exiger une revue humaine avant merge.
+
+## Chapitre 16 — MCP & Agents (notes formateur)
+
+- Chapitre théorique + illustratif : pas de vrai agent nécessaire en salle.
+- Démonstration recommandée : montrer `examples/mcp-agent/orchestrator.ts` en live coding commenté.
+- Insister sur `AGENTS.md` : faire rédiger les apprenants en groupe avant de montrer la solution.
+- Exercice `advanced-05` : pas de clé API requise — tout est mocké localement.
+- Point de discussion : dans quels cas l’agent ne remplace PAS le jugement humain ?
 
 ## Grille rapide
 

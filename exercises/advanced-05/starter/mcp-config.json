@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "tools": [
+        "playwright_navigate",
+        "playwright_screenshot",
+        "playwright_get_dom",
+        "playwright_click",
+        "playwright_fill",
+        "playwright_run_test"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "tools": ["create_branch", "create_or_update_file", "create_pull_request"]
+    }
+  }
+}

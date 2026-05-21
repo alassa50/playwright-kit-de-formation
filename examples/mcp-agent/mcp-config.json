@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--headless"],
+      "tools": [
+        "playwright_navigate",
+        "playwright_screenshot",
+        "playwright_get_dom",
+        "playwright_click",
+        "playwright_fill",
+        "playwright_run_test",
+        "playwright_get_visible_text"
+      ]
+    },
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-jira"],
+      "env": {
+        "JIRA_BASE_URL": "${JIRA_BASE_URL}",
+        "JIRA_API_TOKEN": "${JIRA_TOKEN}",
+        "JIRA_USER_EMAIL": "${JIRA_EMAIL}"
+      },
+      "tools": [
+        "jira_get_issue",
+        "jira_add_comment",
+        "jira_transition_issue",
+        "jira_get_transitions"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "tools": [
+        "create_branch",
+        "create_or_update_file",
+        "create_pull_request",
+        "get_file_contents"
+      ]
+    }
+  }
+}

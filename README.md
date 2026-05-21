@@ -52,9 +52,9 @@ Formation complète et pratique Playwright (débutant → avancé), prête pour 
 - `npm run format` : formatage Prettier
 - `npm run bdd` : exemple Cucumber
 
-## Plan de formation (16 chapitres)
+## Plan de formation (17 chapitres)
 
-Voir `course/chapter-00.md` à `course/chapter-15.md`.
+Voir `course/chapter-00.md` à `course/chapter-16.md`.
 
 0. Bases JavaScript/TypeScript _(prérequis)_
 1. Introduction Playwright Test
@@ -72,20 +72,23 @@ Voir `course/chapter-00.md` à `course/chapter-15.md`.
 13. Testing assisté par l'IA (2026)
 14. Test d'API natif avec Playwright
 15. Tester les systèmes IA (LLMs, chatbots)
+16. MCP & Agents IA pour l'automatisation QA
 
 ## Exercices
 
 - Débutant : `exercises/beginner-00`, `exercises/beginner-01`, `exercises/beginner-02`
 - Intermédiaire : `exercises/intermediate-01`, `exercises/intermediate-02`
-- Avancé : `exercises/advanced-01`, `exercises/advanced-02`, `exercises/advanced-03`, `exercises/advanced-04`
+- Avancé : `exercises/advanced-01`, `exercises/advanced-02`, `exercises/advanced-03`, `exercises/advanced-04`, `exercises/advanced-05`
 
-## IA (Copilot / ChatGPT)
+## IA (Copilot / ChatGPT / Agents MCP)
 
 Consulter:
 
 - `.github/prompts/` — 5 prompts versionnés (génération, refactoring, revue qualité, test IA, création d'exercice)
 - `course/chapter-13.md` — Workflow IA intégré au cycle de test
 - `course/chapter-15.md` — Tester les LLMs et chatbots
+- `course/chapter-16.md` — MCP & agents IA pour l'automatisation QA (pipeline autonome)
+- `examples/mcp-agent/` — Architecture de référence : orchestrateur, AGENTS.md, config MCP
 - `TEACHING_GUIDE.md` (workflow IA + revue humaine)
 - `MAINTENANCE.md` (flaky tests et dette technique)
 
