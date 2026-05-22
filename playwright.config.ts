@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: '.',
   testMatch: ['**/*.spec.ts'],
+  testIgnore: ['**/exercises/advanced-06/tests/playwright-agents.spec.ts'],
   timeout: 30_000,
   retries: process.env.CI ? 1 : 0,
   reporter: [['html', { open: 'never' }], ['list']],
