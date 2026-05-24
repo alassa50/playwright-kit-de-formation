@@ -156,13 +156,17 @@ test.describe('Solution commentée — runWithAutoDebug() : boucle auto-debug', 
   });
 
   test('ne dépasse pas MAX_ATTEMPTS tentatives', async () => {
+    let runTestCalls = 0;
     const tools = makeMcpTools({
-      playwright_run_test: async (): Promise<TestResult> => ({
-        passed: false,
-        error: 'Timeout exceeded',
-        failingUrl: 'https://staging.example.com/page',
-        failingSelector: '[data-testid="missing"]',
-      }),
+      playwright_run_test: async (): Promise<TestResult> => {
+        runTestCalls++;
+        return {
+          passed: false,
+          error: 'Timeout exceeded',
+          failingUrl: 'https://staging.example.com/page',
+          failingSelector: '[data-testid="missing"]',
+        };
+      },
     });
 
     const result = await runWithAutoDebug('test.spec.ts', tools);
@@ -170,7 +174,7 @@ test.describe('Solution commentée — runWithAutoDebug() : boucle auto-debug', 
     expect(result.passed).toBe(false);
     // Plafonnement strict : protège contre les boucles infinies
     expect(result.attempts).toBe(MAX_ATTEMPTS);
-    expect(tools.calls['playwright_run_test']).toBe(MAX_ATTEMPTS);
+    expect(runTestCalls).toBe(MAX_ATTEMPTS);
     expect(MAX_ATTEMPTS).toBe(3);
   });
 
