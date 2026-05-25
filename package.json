@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
+    "install:browsers": "NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt npx playwright install --with-deps",
     "test": "playwright test --project=chromium",
     "test:all": "playwright test",
     "test:headed": "playwright test --project=chromium --headed",
@@ -27,9 +28,9 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.3",
     "@cucumber/cucumber": "^12.9.0",
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.0",
-    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@playwright/test": "1.60.0",
+    "@types/node": "^25.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.4",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",

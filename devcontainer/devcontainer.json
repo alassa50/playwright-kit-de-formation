@@ -5,7 +5,10 @@
     "context": ".."
   },
   "remoteUser": "node",
-  "postCreateCommand": "npm install && npx playwright install --with-deps",
+  "remoteEnv": {
+    "NODE_EXTRA_CA_CERTS": "/etc/ssl/certs/ca-certificates.crt"
+  },
+  "postCreateCommand": "npm install",
   "customizations": {
     "vscode": {
       "extensions": ["ms-playwright.playwright", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
