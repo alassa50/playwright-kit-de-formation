@@ -29,7 +29,7 @@
     "@axe-core/playwright": "^4.11.3",
     "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "1.60.0",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.3",
     "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.4",
     "eslint": "^10.4.0",
