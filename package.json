@@ -39,7 +39,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "nyc": "^18.0.0",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.4",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
