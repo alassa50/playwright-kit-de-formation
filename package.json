@@ -31,7 +31,7 @@
     "@axe-core/playwright": "^4.12.1",
     "@cucumber/cucumber": "^13.0.0",
     "@playwright/test": "1.61.1",
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.1.2",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
     "@typescript-eslint/parser": "^8.63.0",
     "eslint": "^10.6.0",
