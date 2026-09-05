@@ -33,13 +33,13 @@
     "@playwright/test": "1.61.1",
     "@types/node": "^26.4.0",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
-    "@typescript-eslint/parser": "^8.63.0",
+    "@typescript-eslint/parser": "^8.68.0",
     "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
+    "lint-staged": "^17.4.1",
     "nyc": "^18.0.0",
-    "prettier": "^3.9.4",
+    "prettier": "^3.9.6",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
